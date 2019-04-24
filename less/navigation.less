@@ -1,4 +1,52 @@
 // Navigation Styles here
 header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
 
+.header-bar {
+  max-width: @container-width;
+  height: @header-height;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+
+  .header-buttons {
+    display: flex;
+    flex-direction: row;
+
+    .get-started-btn {
+      background-color: @primary-color;
+      color: @secondary-color;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+      width: 100px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .log-in-btn {
+      background-color: @secondary-color;
+      color: @primary-color;
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+      width: 100px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+nav {
+  a {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }

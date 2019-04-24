@@ -1,3 +1,62 @@
-.container{
-
+.container {
+  width: 1200px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+.header-bar {
+  max-width: 1200px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+.header-bar .header-buttons {
+  display: flex;
+  flex-direction: row;
+}
+.header-bar .header-buttons .get-started-btn {
+  background-color: blue;
+  color: red;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  width: 100px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-bar .header-buttons .log-in-btn {
+  background-color: red;
+  color: blue;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  width: 100px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav a {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.hero {
+  background-image: url("./assets/img/hero-img-home.jpg");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 400px;
+}
+.hero h1 {
+  padding-top: 100px;
 }
