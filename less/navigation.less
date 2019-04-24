@@ -1,0 +1,57 @@
+// Navigation Styles here
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+.header-bar {
+  max-width: @container-width;
+  height: @header-height;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+
+  .logo {
+    font-family: 'Roboto Slab', serif;
+    font-size: 2rem;
+  }
+
+  nav {
+    a {
+      margin-left: 20px;
+      margin-right: 20px;
+      text-decoration: none;
+      color: black;
+    }
+  }
+
+  .header-buttons {
+    display: flex;
+    flex-direction: row;
+
+    .get-started-btn {
+      .button;
+      border-radius: 0;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+      border-width: 1px;
+      border-color: @primary-color;
+      border-style: solid;
+    }
+
+    .log-in-btn {
+      .button;
+      background-color: @secondary-color;
+      color: @primary-color;
+      border-radius: 0;
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+      border-width: 1px;
+      border-color: @primary-color;
+      border-style: solid;
+    }
+  }
+}
