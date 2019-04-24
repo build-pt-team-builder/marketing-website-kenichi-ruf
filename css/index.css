@@ -9,7 +9,7 @@
   justify-content: center;
 }
 .container {
-  width: 1200px;
+  max-width: 1200px;
   display: flex;
   align-items: center;
   margin: 0 auto;
@@ -28,6 +28,10 @@ header {
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
+}
+.header-bar .logo {
+  font-family: 'Roboto Slab', serif;
+  font-size: 2rem;
 }
 .header-bar .header-buttons {
   display: flex;
@@ -66,15 +70,20 @@ nav a {
   margin-right: 20px;
 }
 .hero {
-  background-image: url("./assets/img/hero-img-home.jpg");
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 400px;
+  height: 554.15px;
+}
+.hero img {
+  position: absolute;
+  max-width: 1200px;
+  z-index: -1;
+  opacity: 0.2;
 }
 .hero h1 {
-  padding-top: 100px;
+  padding-top: 175px;
 }
 .hero .get-started-btn {
   background-color: blue;
@@ -86,5 +95,8 @@ nav a {
   align-items: center;
   justify-content: center;
   width: 150px;
-  margin-top: 30px;
+  margin-top: 50px;
+}
+.hero .learn-more {
+  margin-top: 50px;
 }
