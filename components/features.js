@@ -1,12 +1,15 @@
-new FeatureTab(tabElement) {
-  this.tabElement = tabElement;
-  this.tabName = tabElement.querySelector(".feature-name");
+class Feature {
+  constructor (featureElement) {
+    this.featureElement = featureElement;
+    this.featureTab = this.featureElement.querySelector(".feature-tab");
+    this.featureDetail = this.featureElement.querySelector(".feature-details");
+    this.featureTab.addEventListener('click', this.expand.bind(this));
+  };
+
+  expand() {
+    this.featureDetail.setAttribute("style", "display: block");
+  }
 }
 
-new FeatureDetail {
-
-}
-
-let tabs = document.querySelectorAll(".feature-tab");
-tabs.forEach((tab, i) => tab.setAttribute("data-tab", `${i}`));
-tabs.forEach(tab => new FeatureTab(tab));
+let features = document.querySelectorAll(".feature");
+features.forEach(feature => new Feature(feature));
