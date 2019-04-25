@@ -16,6 +16,10 @@
   margin: 0 auto;
   margin-top: 50px;
 }
+a {
+  text-decoration: none;
+  color: black;
+}
 header {
   width: 100%;
   position: fixed;
@@ -39,15 +43,10 @@ header {
 .header-bar nav a {
   margin-left: 20px;
   margin-right: 20px;
-  text-decoration: none;
-  color: black;
 }
 .header-bar .header-buttons {
   display: flex;
   flex-direction: row;
-}
-.header-bar .header-buttons a {
-  text-decoration: none;
 }
 .header-bar .header-buttons .get-started-btn {
   background-color: #bb1333;
@@ -85,6 +84,19 @@ header {
   border-color: #bb1333;
   border-style: solid;
 }
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+footer .footer-bar {
+  width: 1200px;
+  margin: 0 auto;
+}
+footer .references {
+  text-align: center;
+}
 .hero {
   display: flex;
   flex-direction: column;
@@ -117,12 +129,15 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 35px;
   width: 150px;
   font-size: 1rem;
 }
-.hero .learn-more {
-  margin-top: 100px;
-  font-size: 0.8rem;
+.hero .why-teambuilder {
+  margin-top: 65px;
+  font-size: 1rem;
+  margin-block-end: 5px;
+  font-weight: bold;
 }
 .hero .down-arrow {
   width: 20px;
