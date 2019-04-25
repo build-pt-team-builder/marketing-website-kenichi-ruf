@@ -1,5 +1,5 @@
 .button {
-  background-color: green;
+  background-color: #bb1333;
   color: white;
   border-radius: 20px;
   width: 100px;
@@ -7,6 +7,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 1rem;
 }
 .container {
   max-width: 1200px;
@@ -33,6 +34,7 @@ header {
 .header-bar .logo {
   font-family: 'Roboto Slab', serif;
   font-size: 2rem;
+  color: #bb1333;
 }
 .header-bar nav a {
   margin-left: 20px;
@@ -44,8 +46,11 @@ header {
   display: flex;
   flex-direction: row;
 }
+.header-bar .header-buttons a {
+  text-decoration: none;
+}
 .header-bar .header-buttons .get-started-btn {
-  background-color: green;
+  background-color: #bb1333;
   color: white;
   border-radius: 20px;
   width: 100px;
@@ -53,15 +58,16 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 1rem;
   border-radius: 0;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   border-width: 1px;
-  border-color: green;
+  border-color: #bb1333;
   border-style: solid;
 }
 .header-bar .header-buttons .log-in-btn {
-  background-color: green;
+  background-color: #bb1333;
   color: white;
   border-radius: 20px;
   width: 100px;
@@ -69,13 +75,14 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 1rem;
   background-color: white;
-  color: green;
+  color: #bb1333;
   border-radius: 0;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   border-width: 1px;
-  border-color: green;
+  border-color: #bb1333;
   border-style: solid;
 }
 .hero {
@@ -93,9 +100,16 @@ header {
 }
 .hero h1 {
   padding-top: 175px;
+  font-size: 3rem;
+}
+.hero p {
+  font-size: 1.5rem;
+}
+.hero a {
+  text-decoration: none;
 }
 .hero .get-started-btn {
-  background-color: green;
+  background-color: #bb1333;
   color: white;
   border-radius: 20px;
   width: 100px;
@@ -104,10 +118,11 @@ header {
   align-items: center;
   justify-content: center;
   width: 150px;
-  margin-top: 50px;
+  font-size: 1rem;
 }
 .hero .learn-more {
   margin-top: 100px;
+  font-size: 0.8rem;
 }
 .hero .down-arrow {
   width: 20px;
