@@ -157,6 +157,20 @@ footer .references {
   background-color: #55596d;
   color: white;
 }
+.content-block {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.content-block .content-block-small {
+  width: 35%;
+}
+.content-block .content-block-small img {
+  width: 100%;
+}
+.content-block .content-block-big {
+  width: 65%;
+}
 .feature-list {
   padding-top: 20px;
   width: 75%;
