@@ -154,13 +154,14 @@ footer .references {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  background-color: #55596d;
-  color: white;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 .content-block {
   display: flex;
   flex-direction: row;
-  width: 100%;
+  width: 80%;
+  margin-top: 50px;
 }
 .content-block .content-block-small {
   width: 35%;
@@ -168,8 +169,9 @@ footer .references {
 .content-block .content-block-small img {
   width: 100%;
 }
-.content-block .content-block-big {
+.content-block .content-block-large {
   width: 65%;
+  padding-left: 50px;
 }
 .feature-list {
   padding-top: 20px;
