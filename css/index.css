@@ -204,3 +204,9 @@ footer .references {
 .container.features .feature-list .feature-details {
   display: none;
 }
+.container.about-us .hero {
+  height: 250px;
+}
+.container.about-us .hero h1 {
+  padding-top: 50px;
+}
