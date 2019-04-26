@@ -174,12 +174,12 @@ footer .references {
   padding-left: 50px;
 }
 .container.features .hero .hero-image {
-  opacity: 0.5;
+  opacity: 0.3;
   height: 515px;
 }
 .container.features .feature-list {
   padding-top: 20px;
-  width: 75%;
+  width: 65%;
   margin: 0 auto;
 }
 .container.features .feature-list .feature-tab {
@@ -197,12 +197,17 @@ footer .references {
   border-color: #002070;
   margin-bottom: 20px;
 }
+.container.features .feature-list .feature-tab:hover {
+  background-color: white;
+  color: #002070;
+}
 .container.features .feature-list .feature-tab h2 {
   margin-block-start: 0;
   margin-block-end: 0;
 }
 .container.features .feature-list .feature-details {
   display: none;
+  width: 100%;
 }
 .container.about-us .hero {
   height: 250px;

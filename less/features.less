@@ -1,13 +1,13 @@
 .container.features {
   .hero {
     .hero-image {
-      opacity: .5;
+      opacity: .3;
       height: 515px;
     }
   }
   .feature-list {
     padding-top: 20px;
-    width: 75%;
+    width: 65%;
     margin: 0 auto;
 
     .feature-tab {
@@ -24,6 +24,10 @@
       border-width: 2px;
       border-color: @tertiary-color;
       margin-bottom: 20px;
+      &:hover {
+        background-color: @secondary-color;
+        color: @tertiary-color;
+      }
 
       h2 {
         margin-block-start: 0;
@@ -33,6 +37,7 @@
 
     .feature-details {
       display: none;
+      width: 100%;
     }
   }
 }
