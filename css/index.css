@@ -42,6 +42,8 @@ header {
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .header-bar .logo {
   font-family: 'Roboto Slab', serif;
@@ -52,17 +54,35 @@ header {
   margin-left: 20px;
   margin-right: 20px;
 }
-@media (max-width: 500px) {
-  .header-bar nav {
+@media (max-width: 800px) {
+  .header-bar nav a {
     display: none;
+  }
+}
+.header-bar nav .mobile-menu-icon {
+  width: 35px;
+  height: 5px;
+  background-color: #55596d;
+  margin: 6px 0;
+  display: none;
+}
+@media (max-width: 800px) {
+  .header-bar nav .mobile-menu-icon {
+    display: block;
+  }
+}
+@media (max-width: 800px) {
+  .header-bar nav {
     flex-direction: column;
+    position: absolute;
+    right: 10px;
   }
 }
 .header-bar .header-buttons {
   display: flex;
   flex-direction: row;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .header-bar .header-buttons {
     display: none;
   }
@@ -121,7 +141,7 @@ footer {
   background-color: #55596d;
 }
 footer .footer-bar {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 footer .references {
@@ -137,7 +157,7 @@ footer .references {
 .hero .hero-image {
   position: absolute;
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 100%;
   z-index: -1;
   opacity: 0.2;
 }
