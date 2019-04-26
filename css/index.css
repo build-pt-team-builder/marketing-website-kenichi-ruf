@@ -8,6 +8,9 @@
   align-items: center;
   justify-content: center;
   font-size: 1rem;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #bb1333;
 }
 * {
   font-family: 'Lato', sans-serif;
@@ -63,12 +66,17 @@ header {
   align-items: center;
   justify-content: center;
   font-size: 1rem;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #bb1333;
   border-radius: 0;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
-  border-width: 1px;
-  border-color: #bb1333;
-  border-style: solid;
+}
+.header-bar .header-buttons .get-started-btn:hover {
+  background-color: #002070;
+  color: white;
+  border-color: #002070;
 }
 .header-bar .header-buttons .log-in-btn {
   background-color: #bb1333;
@@ -80,14 +88,19 @@ header {
   align-items: center;
   justify-content: center;
   font-size: 1rem;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #bb1333;
   background-color: white;
   color: #bb1333;
   border-radius: 0;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
-  border-width: 1px;
-  border-color: #bb1333;
-  border-style: solid;
+}
+.header-bar .header-buttons .log-in-btn:hover {
+  background-color: #002070;
+  color: white;
+  border-color: #002070;
 }
 footer {
   display: flex;
@@ -136,9 +149,16 @@ footer .references {
   display: flex;
   align-items: center;
   justify-content: center;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #bb1333;
   margin-top: 35px;
   width: 150px;
   font-size: 1rem;
+}
+.hero .get-started-btn:hover {
+  background-color: white;
+  color: #bb1333;
 }
 .hero .why-link {
   margin-top: 65px;
