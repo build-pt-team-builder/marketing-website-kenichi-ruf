@@ -27,11 +27,20 @@ header {
       margin-left: 20px;
       margin-right: 20px;
     }
+
+    @media @mobile {
+      display: none;
+      flex-direction: column;
+    }
   }
 
   .header-buttons {
     display: flex;
     flex-direction: row;
+
+    @media @mobile {
+      display: none;
+    }
 
     .get-started-btn {
       .button;
@@ -55,7 +64,7 @@ header {
       &:hover {
         background-color: @tertiary-color;
         color: @secondary-color;
-        border-color: @tertiary-color;        
+        border-color: @tertiary-color;
       }
     }
   }

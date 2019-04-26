@@ -52,9 +52,20 @@ header {
   margin-left: 20px;
   margin-right: 20px;
 }
+@media (max-width: 500px) {
+  .header-bar nav {
+    display: none;
+    flex-direction: column;
+  }
+}
 .header-bar .header-buttons {
   display: flex;
   flex-direction: row;
+}
+@media (max-width: 500px) {
+  .header-bar .header-buttons {
+    display: none;
+  }
 }
 .header-bar .header-buttons .get-started-btn {
   background-color: #bb1333;
@@ -133,9 +144,11 @@ footer .references {
 .hero h1 {
   padding-top: 175px;
   font-size: 3rem;
+  text-align: center;
 }
 .hero p {
   font-size: 1.5rem;
+  text-align: center;
 }
 .hero a {
   text-decoration: none;
