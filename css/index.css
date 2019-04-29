@@ -78,6 +78,13 @@ header {
     right: 10px;
   }
 }
+.header-bar nav .mobile-nav-link {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50px;
+  right: 0;
+}
 .header-bar .header-buttons {
   display: flex;
   flex-direction: row;
