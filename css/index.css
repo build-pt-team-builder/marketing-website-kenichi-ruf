@@ -157,7 +157,7 @@ footer .references {
 .hero .hero-image {
   position: absolute;
   margin: 0 auto;
-  max-width: 100%;
+  max-width: 1200px;
   z-index: -1;
   opacity: 0.2;
 }
