@@ -56,6 +56,7 @@ header {
   justify-content: space-around;
   width: 1200px;
   max-width: 80%;
+  margin-left: 40px;
 }
 @media (max-width: 800px) {
   .header-bar nav {
@@ -66,6 +67,9 @@ header {
     top: 50px;
     max-width: 100%;
   }
+}
+.header-bar nav a:hover {
+  color: #bb1333;
 }
 @media (max-width: 800px) {
   .header-bar nav a {
@@ -254,6 +258,20 @@ footer .references {
   margin-top: 50px;
   margin-bottom: 50px;
 }
+h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+@media (max-width: 800px) {
+  h2 {
+    font-size: 1.75rem;
+  }
+}
+@media (max-width: 500px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+}
 .content-block {
   display: flex;
   flex-direction: row;
@@ -269,6 +287,12 @@ footer .references {
 .content-block .content-block-large {
   width: 65%;
   padding-left: 50px;
+}
+.content-block .content-block-large h3 {
+  font-size: 1.5rem;
+}
+.content-block .content-block-large p {
+  font-size: 1.25rem;
 }
 .container.features .hero {
   background-image: url("../assets/img/features-icon.svg");

@@ -30,6 +30,7 @@ header {
     justify-content: space-around;
     width: @container-width;
     max-width: 80%;
+    margin-left: 40px;
 
     @media @tablet {
       display: none;
@@ -41,6 +42,9 @@ header {
     }
 
     a {
+      &:hover {
+        color: @primary-color;
+      }
       @media @tablet {
         display: flex;
         justify-content: center;
