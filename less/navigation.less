@@ -36,15 +36,17 @@ header {
       flex-direction: column;
       position: absolute;
       right: 10px;
-      justify-content: center;
       top: @header-height;
+      width: auto;
     }
 
     a {
       @media @tablet {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 100px;
-        height: 50px;
-        text-align: center;
+        height: 40px;
         background-color: white;
       }
     }
