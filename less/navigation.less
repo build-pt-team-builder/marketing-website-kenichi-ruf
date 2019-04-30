@@ -8,6 +8,7 @@ header {
 }
 
 .header-bar {
+  position: relative;
   max-width: @container-width;
   height: @header-height;
   display: flex;
@@ -25,10 +26,20 @@ header {
   }
 
   nav {
-    a {
-      margin-left: 20px;
-      margin-right: 20px;
+    display: flex;
+    justify-content: space-around;
+    width: @container-width;
+    max-width: 80%;
 
+    @media @tablet {
+      flex-direction: column;
+      position: absolute;
+      right: 10px;
+      justify-content: center;
+      top: @header-height;
+    }
+
+    a {
       @media @tablet {
         display: none;
         width: 100px;
@@ -37,32 +48,38 @@ header {
         background-color: white;
       }
     }
+  }
 
-    .mobile-menu-icon {
+  .mobile-nav {
+    display: none;
+    position: absolute;
+    right: 10px;
+
+    @media @tablet {
+      display: inline-block;
+      cursor: pointer;
+    }
+
+    div {
       width: 35px;
       height: 5px;
       background-color: @sixth-color;
       margin: 6px 0;
-      display: none;
-
-      @media @tablet {
-        display: block;
-      }
+      transition: 0.4s;
     }
 
-    @media @tablet {
-      flex-direction: column;
-      position: absolute;
-      right: 10px;
+    .bar1.change {
+      -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+      transform: rotate(-45deg) translate(-9px, 6px) ;
     }
 
-    .mobile-nav-link {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      position: absolute;
-      top: @header-height;
-      right: 0;
+    .bar2.change {
+      opacity: 0;
+    }
+
+    .bar3.change {
+      -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+      transform: rotate(45deg) translate(-8px, -8px) ;
     }
   }
 

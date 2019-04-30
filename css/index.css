@@ -35,6 +35,7 @@ header {
   background-color: white;
 }
 .header-bar {
+  position: relative;
   max-width: 1200px;
   height: 50px;
   display: flex;
@@ -50,9 +51,20 @@ header {
   font-size: 2rem;
   color: #bb1333;
 }
-.header-bar nav a {
-  margin-left: 20px;
-  margin-right: 20px;
+.header-bar nav {
+  display: flex;
+  justify-content: space-around;
+  width: 1200px;
+  max-width: 80%;
+}
+@media (max-width: 800px) {
+  .header-bar nav {
+    flex-direction: column;
+    position: absolute;
+    right: 10px;
+    justify-content: center;
+    top: 50px;
+  }
 }
 @media (max-width: 800px) {
   .header-bar nav a {
@@ -63,32 +75,34 @@ header {
     background-color: white;
   }
 }
-.header-bar nav .mobile-menu-icon {
+.header-bar .mobile-nav {
+  display: none;
+  position: absolute;
+  right: 10px;
+}
+@media (max-width: 800px) {
+  .header-bar .mobile-nav {
+    display: inline-block;
+    cursor: pointer;
+  }
+}
+.header-bar .mobile-nav div {
   width: 35px;
   height: 5px;
   background-color: #55596d;
   margin: 6px 0;
-  display: none;
+  transition: 0.4s;
 }
-@media (max-width: 800px) {
-  .header-bar nav .mobile-menu-icon {
-    display: block;
-  }
+.header-bar .mobile-nav .bar1.change {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
 }
-@media (max-width: 800px) {
-  .header-bar nav {
-    flex-direction: column;
-    position: absolute;
-    right: 10px;
-  }
+.header-bar .mobile-nav .bar2.change {
+  opacity: 0;
 }
-.header-bar nav .mobile-nav-link {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: absolute;
-  top: 50px;
-  right: 0;
+.header-bar .mobile-nav .bar3.change {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
 }
 .header-bar .header-buttons {
   display: flex;
@@ -160,18 +174,13 @@ footer .references {
   text-align: center;
 }
 .hero {
+  background-image: url("../assets/img/opaque-hero-home.png");
+  background-position: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
   height: 554.15px;
-}
-.hero .hero-image {
-  position: absolute;
-  margin: 0 auto;
-  max-width: 1200px;
-  z-index: -1;
-  opacity: 0.2;
 }
 .hero h1 {
   padding-top: 175px;
