@@ -1,16 +1,20 @@
-.container.features {
+.container.resources {
   .hero {
-    .hero-image {
-      opacity: .5;
-      height: 515px;
-    }
-  }
-  .feature-list {
-    padding-top: 20px;
-    width: 75%;
-    margin: 0 auto;
 
-    .feature-tab {
+  }
+
+  .resource-categories {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .resource-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .resource-card {
       display: flex;
       flex-direction: row;
       align-items: center;
@@ -29,10 +33,6 @@
         margin-block-start: 0;
         margin-block-end: 0;
       }
-    }
-
-    .feature-details {
-      display: none;
     }
   }
 }
