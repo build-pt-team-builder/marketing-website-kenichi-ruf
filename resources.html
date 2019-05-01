@@ -5,7 +5,7 @@
     <link rel="stylesheet" type="text/css" href="./css/index.css" />
     <meta charset="utf-8"/>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
-    <script src="./components/features.js" async></script>
+    <script src="./components/resources.js" async></script>
   </head>
   <body>
     <header>
@@ -29,12 +29,28 @@
         <h1>Resources</h1>
       </div>
       <div class = "resource-categories">
-        <ul>
-          <li></li>
-        </ul>
+        <span>Categories:</span>
+        <div class = "resource-tab" data-tab = "all">All Resources</div>
+        <div class = "resource-tab" data-tab = "product">Product Mangement</div>
+        <div class = "resource-tab" data-tab = "team">Team Building</div>
+        <div class = "resource-tab" data-tab = "leadership">Leadership</div>
       </div>
       <div class = "resource-list">
-        <div class = "resource-card">
+        <div class = "resource-card" data-tab = "leadership">
+          <h2>Resource</h2>
+          <p>Resource Description</p>
+        </div>
+        <div class = "resource-card" data-tab = "product">
+          <h2>Resource</h2>
+          <p>Resource Description</p>
+        </div>
+        <div class = "resource-card" data-tab = "team">
+          <h2>Resource</h2>
+          <p>Resource Description</p>
+        </div>
+        <div class = "resource-card" data-tab = "team">
+          <h2>Resource</h2>
+          <p>Resource Description</p>
         </div>
       </div>
     </div>
