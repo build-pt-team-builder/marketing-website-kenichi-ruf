@@ -5,7 +5,7 @@
     <link rel="stylesheet" type="text/css" href="./css/index.css" />
     <meta charset="utf-8"/>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
-    <script src="./components/features.js" async></script>
+    <script src="./components/resources.js" async></script>
   </head>
   <body>
     <header>
@@ -23,39 +23,33 @@
         </div>
       </div>
     </header>
-    <div class = "container features">
+    <div class = "container resources">
       <div class = "hero">
-        <h1>Features</h1>
-        <p>Organize your product ideas and create teams to bring them to life.</p>
-        <a href="https://teambuilderapp.netlify.com/"><div class = "get-started-btn">Get Started</div></a>
-        <p class = "why-link"><a href="#features">Features</a></p>
-        <a href="#features"><img src = "./assets/img/down-arrow.png" class = "down-arrow"></a>
+        <h1>Resources</h1>
       </div>
-      <a name="features"></a>
-      <div class = "feature-list">
-        <div class = "feature">
-          <div class = "feature-tab">
-            <h2 class="feature-name">Custom Columns</h2>
-          </div>
-          <div class = "feature-details">
-            <p>Add custom columns to your tables.</p>
-          </div>
+      <div class = "resource-categories">
+        <span>Categories:</span>
+        <div class = "resource-tab" data-tab = "all">All Resources</div>
+        <div class = "resource-tab" data-tab = "product">Product Mangement</div>
+        <div class = "resource-tab" data-tab = "team">Team Building</div>
+        <div class = "resource-tab" data-tab = "leadership">Leadership</div>
+      </div>
+      <div class = "resource-list">
+        <div class = "resource-card" data-tab = "leadership">
+          <h2>Resource</h2>
+          <p>Resource Description</p>
         </div>
-        <div class = "feature">
-          <div class = "feature-tab">
-            <h2 class="feature-name">Idea Submissions</h2>
-          </div>
-          <div class = "feature-details">
-            <p>Let anyone submit product ideas.</p>
-          </div>
+        <div class = "resource-card" data-tab = "product">
+          <h2>Resource</h2>
+          <p>Resource Description</p>
         </div>
-        <div class = "feature">
-          <div class = "feature-tab">
-            <h2 class="feature-name">Role Based Permissions</h2>
-          </div>
-          <div class = "feature-details">
-            <p>Choose who gets to do what.</p>
-          </div>
+        <div class = "resource-card" data-tab = "team">
+          <h2>Resource</h2>
+          <p>Resource Description</p>
+        </div>
+        <div class = "resource-card" data-tab = "team">
+          <h2>Resource</h2>
+          <p>Resource Description</p>
         </div>
       </div>
     </div>
