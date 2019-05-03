@@ -27,6 +27,9 @@ a {
   text-decoration: none;
   color: black;
 }
+html {
+  scroll-behavior: smooth;
+}
 header {
   width: 100%;
   position: fixed;
@@ -192,6 +195,7 @@ footer .references {
   width: 100%;
   padding-top: 150px;
   padding-bottom: 10px;
+  min-height: 300px;
 }
 .hero h1 {
   font-size: 3rem;
@@ -360,6 +364,9 @@ h2 {
 .container.about-us .hero h1 {
   color: white;
 }
+.container.resources .hero {
+  padding-top: 0;
+}
 .container.resources .resource-categories {
   display: flex;
   flex-direction: row;
@@ -402,6 +409,7 @@ h2 {
   border-style: solid;
   border-width: 2px;
   border-color: #002070;
+  flex-direction: column;
 }
 .container.resources .resource-list .resource-card h2 {
   margin-block-start: 0;
