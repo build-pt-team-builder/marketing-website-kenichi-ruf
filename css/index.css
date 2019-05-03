@@ -267,12 +267,12 @@ h2 {
 }
 @media (max-width: 800px) {
   h2 {
-    font-size: 1.75rem;
+    font-size: 1.6rem;
   }
 }
 @media (max-width: 500px) {
   h2 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 }
 .content-block {
@@ -294,8 +294,28 @@ h2 {
 .content-block .content-block-large h3 {
   font-size: 1.5rem;
 }
+@media (max-width: 800px) {
+  .content-block .content-block-large h3 {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 500px) {
+  .content-block .content-block-large h3 {
+    font-size: 0.8rem;
+  }
+}
 .content-block .content-block-large p {
   font-size: 1.25rem;
+}
+@media (max-width: 800px) {
+  .content-block .content-block-large p {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 500px) {
+  .content-block .content-block-large p {
+    font-size: 0.8rem;
+  }
 }
 .container.features .hero {
   background-image: url("../assets/img/features-icon.svg");
