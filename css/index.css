@@ -336,12 +336,13 @@ h2 {
   justify-content: center;
   background-color: #002070;
   color: white;
-  width: 100%;
-  height: 40px;
+  width: 80%;
+  height: 30px;
   border-radius: 20px;
   border-style: solid;
   border-width: 2px;
   border-color: #002070;
+  margin: 0 auto;
   margin-bottom: 20px;
 }
 .container.features .feature-list .feature-tab:hover {
@@ -351,6 +352,7 @@ h2 {
 .container.features .feature-list .feature-tab h2 {
   margin-block-start: 0;
   margin-block-end: 0;
+  font-size: 1.5rem;
 }
 .container.features .feature-list .feature-details {
   display: none;
