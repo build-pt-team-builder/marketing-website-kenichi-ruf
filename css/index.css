@@ -356,7 +356,8 @@ h2 {
 }
 .container.features .feature-list .feature-details {
   display: none;
-  width: 100%;
+  width: 80%;
+  margin: 0 auto;
 }
 .container.about-us .hero {
   background-image: url("../assets/img/team-icon.svg");
